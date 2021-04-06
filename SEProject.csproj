@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E31C064-08E6-4780-8754-81B7A40E0C0C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SEProject</RootNamespace>
+    <AssemblyName>SEProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcstOfWheel\ActEightcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActEightcs.Designer.cs">
+      <DependentUpon>ActEightcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActFive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActFive.Designer.cs">
+      <DependentUpon>ActFive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActFour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActFour.Designer.cs">
+      <DependentUpon>ActFour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActSeven.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActSeven.Designer.cs">
+      <DependentUpon>ActSeven.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActSix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActSix.designer.cs">
+      <DependentUpon>ActSix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActThree.Designer.cs">
+      <DependentUpon>ActThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActTwo.Designer.cs">
+      <DependentUpon>ActTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcstOfWheel\ActOne.Designer.cs">
+      <DependentUpon>ActOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActEightFolder\ActEightPuzzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActEightFolder\ActEightPuzzle.Designer.cs">
+      <DependentUpon>ActEightPuzzle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActFourFolder\ActFourMatchTheCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActFourFolder\ActFourMatchTheCards.Designer.cs">
+      <DependentUpon>ActFourMatchTheCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActOneFolder\FlagsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActOneFolder\FlagsForm.Designer.cs">
+      <DependentUpon>FlagsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActOneFolder\HarryPotterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActOneFolder\HarryPotterForm.Designer.cs">
+      <DependentUpon>HarryPotterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActOneFolder\PopCultureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActOneFolder\PopCultureForm.Designer.cs">
+      <DependentUpon>PopCultureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActOneFolder\VideoGamesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActOneFolder\VideoGamesForm.Designer.cs">
+      <DependentUpon>VideoGamesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActSixFolder\ActSixLearning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActSixFolder\ActSixLearning.designer.cs">
+      <DependentUpon>ActSixLearning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActThreeFolder\ActThreePacman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActThreeFolder\ActThreePacman.Designer.cs">
+      <DependentUpon>ActThreePacman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActTwoFolder\ActTwoPlatformer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActTwoFolder\ActTwoPlatformer.Designer.cs">
+      <DependentUpon>ActTwoPlatformer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AroundLogin\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AroundLogin\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AroundLogin\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AroundLogin\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AroundLogin\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AroundLogin\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActOneFolder\MovieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActOneFolder\MovieForm.Designer.cs">
+      <DependentUpon>MovieForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AroundLogin\Moderator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AroundLogin\Moderator.Designer.cs">
+      <DependentUpon>Moderator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AroundLogin\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AroundLogin\User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ActOneFolder\SongsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActOneFolder\SongsForm.Designer.cs">
+      <DependentUpon>SongsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wheel\WheelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wheel\WheelForm.Designer.cs">
+      <DependentUpon>WheelForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AcstOfWheel\ActEightcs.resx">
+      <DependentUpon>ActEightcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcstOfWheel\ActFive.resx">
+      <DependentUpon>ActFive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcstOfWheel\ActFour.resx">
+      <DependentUpon>ActFour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcstOfWheel\ActOne.resx">
+      <DependentUpon>ActOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcstOfWheel\ActSix.resx">
+      <DependentUpon>ActSix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcstOfWheel\ActThree.resx">
+      <DependentUpon>ActThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcstOfWheel\ActTwo.resx">
+      <DependentUpon>ActTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActEightFolder\ActEightPuzzle.resx">
+      <DependentUpon>ActEightPuzzle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActFourFolder\ActFourMatchTheCards.resx">
+      <DependentUpon>ActFourMatchTheCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActOneFolder\FlagsForm.resx">
+      <DependentUpon>FlagsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActOneFolder\HarryPotterForm.resx">
+      <DependentUpon>HarryPotterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActOneFolder\MovieForm.resx">
+      <DependentUpon>MovieForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActOneFolder\PopCultureForm.resx">
+      <DependentUpon>PopCultureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActOneFolder\VideoGamesForm.resx">
+      <DependentUpon>VideoGamesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActSixFolder\ActSixLearning.resx">
+      <DependentUpon>ActSixLearning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActThreeFolder\ActThreePacman.resx">
+      <DependentUpon>ActThreePacman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActTwoFolder\ActTwoPlatformer.resx">
+      <DependentUpon>ActTwoPlatformer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AroundLogin\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AroundLogin\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AroundLogin\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AroundLogin\Moderator.resx">
+      <DependentUpon>Moderator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AroundLogin\User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActOneFolder\SongsForm.resx">
+      <DependentUpon>SongsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wheel\WheelForm.resx">
+      <DependentUpon>WheelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queen.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_button_small.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PinClipart.com_spinning-wheel-clipart_999821.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink_floyd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trivia_bckgrnd3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_trivia_bckgrnd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tgheorghe.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hendrix.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bap.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katy.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rhcp.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sia.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pjam.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prodigy.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sub.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platformem_controls_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldCoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sivlerCoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8bitChar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blacksus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\castle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charOne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charTwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\castlePng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platformPng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platformCropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8bitbckgrnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_left.gif" />
+    <None Include="Resources\pacman_down.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_right.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacman_up.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackPanther_MatchTheCards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\captainAmerica_MatchTheCards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\captainMarvel_MatchTheCards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hulk_MatchTheCards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ironMan_MatchTheCards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loki_MatchTheCards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\matchTheCards_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spiderMan_MatchTheCards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thor_MatchTheCards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\originalCat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_3menCheering.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_cow.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_Creeper.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_homer.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_lol.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_omg.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_scratch.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_static.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_trance.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_vgameLaugh.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_3menCheering.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_bossLaugh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_cow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_creeper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_homer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_lol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_omg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_scratch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_static.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_trance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukebox_cassette.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_getSchwifty.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_helicopter.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_hitchcock.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_jimmyBarnes.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_pbjtime.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_samuraiJack.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_SpaceCats.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_trump.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_uvu.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_zedsDead.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_getSchwifty.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_helicopter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_hitchcock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_jimmyBarnes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_pbjtime.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_samuraiJack.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_spacecats.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_trump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_uvu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukepic_zedsDead.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juke_musicNote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jukebox_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trivia_brazil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trivia_colombia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trivia_cuba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trivia_egypt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trivia_greece.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trivia_israel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trivia_jamaica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trivia_lebanon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trivia_norway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trivia_portugal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trivia_raceflag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preuser_fieldd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preuser_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preuser_wheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gambling_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backButt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\learningBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\questionsBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usernameIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backv1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backv2.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
